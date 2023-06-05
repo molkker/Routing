@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
     <>
         <div>Home</div>
-        <a href="http://127.0.0.1:5173/about">aboutへ</a>
-        <a href="http://127.0.0.1:5173/company">companyへ</a>
+        <Link to={`/about`}>aboutへ</Link>
+        <Link to={`/company`}>companyへ</Link>
     </>
   )
 }
